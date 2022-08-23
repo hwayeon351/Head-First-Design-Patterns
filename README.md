@@ -23,7 +23,8 @@
 한 객체의 상태가 바뀌며 그 객체에 의존하는 다르 객체에게 연락이 가고 자동으로 내용이 갱신되도록 디자인한 패턴
 
 * 특징 </br>
-Subject와 Observer가 one-to-many 의존성을 정의하며, 느슨한 결합을 가진다.</br>
+Subject와 Observer가 one-to-many 의존성을 정의하며, 느슨한 결합을 가진다.
+</br>
 <img src="/img/observer_pattern_00.png" title="" alt=""></img></br>
 
 *****
