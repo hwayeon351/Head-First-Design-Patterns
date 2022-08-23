@@ -14,13 +14,13 @@ class StatisticsDisplay(weatherData: WeatherData) : Observer, DisplayElement {
         weatherData.registerObserver(this)
     }
 
-    override fun update(temperature: Float?, humidity: Float?, pressure: Float?) {
-        if (temperature != null) {
+    override fun update() {
+        if (weatherData.temperature != null) {
             tempCnt ++
-            tempSum += temperature
+            tempSum += weatherData.temperature!!
 
-            if ((maxTemp == null) || (temperature > maxTemp!!)) maxTemp = temperature
-            if ((minTemp == null) || (temperature < minTemp!!)) minTemp = temperature
+            if ((maxTemp == null) || (weatherData.temperature!! > maxTemp!!)) maxTemp = weatherData.temperature
+            if ((minTemp == null) || (weatherData.temperature!! < minTemp!!)) minTemp = weatherData.temperature
 
             avgTemp = tempSum / tempCnt
             display()

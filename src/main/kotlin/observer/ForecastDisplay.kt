@@ -10,11 +10,11 @@ class ForecastDisplay(weatherData: WeatherData) : Observer, DisplayElement {
         weatherData.registerObserver(this)
     }
 
-    override fun update(temperature: Float?, humidity: Float?, pressure: Float?) {
-        if (pressure != null) {
-            if (currentPressure == null) currentPressure = pressure
+    override fun update() {
+        if (weatherData.pressure != null) {
+            if (currentPressure == null) currentPressure = weatherData.pressure
             lastPressure = currentPressure
-            currentPressure = pressure
+            currentPressure = weatherData.pressure
 
             display()
         }

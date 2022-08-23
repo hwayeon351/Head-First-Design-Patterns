@@ -10,9 +10,9 @@ class HeatIndexDisplay(weatherData: WeatherData) : Observer, DisplayElement {
     }
 
 
-    override fun update(temperature: Float?, humidity: Float?, pressure: Float?) {
-        if (temperature != null && humidity != null) {
-            heatIndex = computeHeatIndex(temperature, humidity)
+    override fun update() {
+        if (weatherData.temperature != null && weatherData.humidity != null) {
+            heatIndex = computeHeatIndex(weatherData.temperature!!, weatherData.humidity!!)
             display()
         }
     }
