@@ -14,7 +14,7 @@
 * 특징 </br>
 클라이언트로부터 알고리즘을 분리해서 독립적으로 변경할 수 있다
 </br>
-<img src="/img/strategy_pattern_00.png" title="" alt=""></img>
+<img src="/img/strategy_pattern_00.png" title="" alt=""></img></br>
 *****
 
 ## 옵저버 패턴 Observer Pattern
