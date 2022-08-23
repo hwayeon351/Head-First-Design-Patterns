@@ -24,6 +24,7 @@
 * 특징 </br>
 Subject와 Observer가 one-to-many 의존성을 정의하며, 느슨한 결합을 가진다.</br>
 <img src="/img/strategy_pattern_01.png" title="" alt=""></img>
+
 *****
 
 
