@@ -15,7 +15,7 @@
 클라이언트로부터 알고리즘을 분리해서 독립적으로 변경할 수 있다
 </br>
 <img src="/img/strategy_pattern_00.png" title="" alt=""></img>
-*****
+
 
 ## 옵저버 패턴 Observer Pattern
 * 정의 </br>
@@ -24,6 +24,6 @@
 * 특징 </br>
 Subject와 Observer가 one-to-many 의존성을 정의하며, 느슨한 결합을 가진다.</br>
 <img src="/img/strategy_pattern_01.png" title="" alt=""></img>
-*****
+
 
 
