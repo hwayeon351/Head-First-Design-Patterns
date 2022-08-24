@@ -6,6 +6,7 @@
 2. 상속Inheritance보다는 구성Composition을 활용한다.
 3. 구현보다는 인터페이스에 맞춰서 프로그래밍한다.
 4. 상호작용하는 객체 사이에서는 가능하면 느슨한 결합을 사용해야 한다.
+5. 클래스는 확장에는 열려 있어야 하지만 변경에는 닫혀 있어야 한다.(OCP, Open-Closed Principle)
 *****
 
 ## 전략 패턴 Strategy Pattern
@@ -30,9 +31,13 @@ Subject와 Observer가 one-to-many 의존성을 정의하며, 느슨한 결합�
 *****
 ## 데코레이터 패턴 Decorator Pattern
 * 정의 </br>
-
+객체에 추가 요소를 동적으로 더할 수 있도록 구상 구성요소를 감싸 주는 데코레이터를 사용하는 패턴
 
 * 특징 </br>
+OCP(Open-Closed Principle)에 충실하면서도 유연한 디자인을 만들 수 있다.
+데코레이터 클래스의 형식은 그 클래스가 감싸는 클래스 형식을 반영(Mirror)한다.
+구성 요소의 클라이언트는 데코레이터의 존재를 알 수 없다.
+데코레이터 패턴을 사용하면 자잘한 객체가 매우 많이 추가될 수 있으며, 코드가 필요 이상으로 복잡해질 수 있다.
 
 </br>
 <img src="/img/decorator_pattern_00.png" title="" alt=""></img></br>
