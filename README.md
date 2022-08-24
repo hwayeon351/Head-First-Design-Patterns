@@ -28,5 +28,14 @@ Subject와 Observer가 one-to-many 의존성을 정의하며, 느슨한 결합�
 <img src="/img/observer_pattern_00.png" title="" alt=""></img></br>
 
 *****
+## 데코레이터 패턴 Decorator Pattern
+* 정의 </br>
 
 
+* 특징 </br>
+
+</br>
+<img src="/img/decorator_pattern_00.png" title="" alt=""></img></br>
+<img src="/img/decorator_pattern_01.png" title="" alt=""></img></br>
+
+*****
