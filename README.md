@@ -47,7 +47,7 @@ OCP(Open-Closed Principle)에 충실하면서도 유연한 디자인을 만들 �
 ## 팩토리 메소드 패턴 Factory Method Pattern
 * 정의 </br>
 객체를 생성할 때 필요한 인터페이스를 만들고, 어떤 클래스의 인스턴스를 생성할지는 서브클래스에서 결정하도록 디자인한 패턴</br>
-**Creator: Product에 수행할 작업을 명시하는 모든 메소드가 구현되어 있다.
+** Creator: Product에 수행할 작업을 명시하는 모든 메소드가 구현되어 있다.
 
 * 특징 </br>
 Creator와 Product로 나뉜다.</br>
