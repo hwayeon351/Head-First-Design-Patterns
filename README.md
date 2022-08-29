@@ -51,4 +51,4 @@ OCP(Open-Closed Principle)에 충실하면서도 유연한 디자인을 만들 �
 
 
 </br>
-<img src="/img/factory_method_pettern_00.png" title="" alt=""></img></br>
+<img src="/img/factory_method_pattern_00.png" title="" alt=""></img></br>
