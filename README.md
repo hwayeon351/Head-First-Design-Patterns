@@ -7,6 +7,7 @@
 3. 구현보다는 인터페이스에 맞춰서 프로그래밍한다.
 4. 상호작용하는 객체 사이에서는 가능하면 느슨한 결합을 사용해야 한다.
 5. 클래스는 확장에는 열려 있어야 하지만 변경에는 닫혀 있어야 한다.(OCP, Open-Closed Principle)
+6. 추상화된 것에 의존하게 만들고 구상 클래스에 의존하지 않게 만든다.(의존성 뒤집기 원칙, Dependency Inversion Principle)
 *****
 
 ## 전략 패턴 Strategy Pattern
@@ -60,8 +61,10 @@ Creator와 Product로 나뉜다.</br>
 어떤 클래스의 인스턴스를 만들지를 서브클래스에서 결정한다.</br>
 자식 Creator가 실제로 어떤 Concrete Product를 생성할지를 결정한다.</br>
 상위 Creator는 생산자 클래스가 어떤 Concrete Product를 생성했는지 전혀 모른다.</br>
-구상 클래스 인스턴스를 생성하는 작업을 서브클래스에게 맡겨 캡슐화할 수 있다.</br>
-즉,제품을 
+구상 클래스 인스턴스를 생성하는 작업을 서브클래스에게 맡겨 캡슐화할 수 있다.(클라이언트 코드와 실제 클래스 구현을 분리)</br>
+즉, Product를 생성하는 부분과 사용하는 부분을 분리함으로써, 다른 Product를 추가하거나 구성을 변경하더라도 Creator를 변경할 필요가 없다.(Creator 클래스가 ConcreteProduct와 느슨한 결합)</br>
+의존성 뒤집기 원칙(Dependency Inversion Principle)을 준수하는 방법 중 하나이다.</br>
+
 
 
 
