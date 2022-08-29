@@ -44,3 +44,11 @@ OCP(Open-Closed Principle)에 충실하면서도 유연한 디자인을 만들 �
 <img src="/img/decorator_pattern_01.png" title="" alt=""></img></br>
 
 *****
+## 팩토리 메소드 패턴 Factory Method Pattern
+* 정의 </br>
+
+* 특징 </br>
+
+
+</br>
+<img src="/img/factory_method_pettern_00.png" title="" alt=""></img></br>
