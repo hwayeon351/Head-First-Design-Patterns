@@ -47,11 +47,21 @@ OCP(Open-Closed Principle)에 충실하면서도 유연한 디자인을 만들 �
 ## 팩토리 메소드 패턴 Factory Method Pattern
 * 정의 </br>
 객체를 생성할 때 필요한 인터페이스를 만들고, 어떤 클래스의 인스턴스를 생성할지는 서브클래스에서 결정하도록 디자인한 패턴</br>
-** Creator: Product에 수행할 작업을 명시하는 모든 메소드가 구현되어 있다.
+Creator와 Product로 나뉜다.</br>
+
+  * Creator
+    * Abstract Creator class: Product를 생성하는 Factory method를 Abstract method로 정의하고, Factory method에 의해 생산된 Product으로 수행할 작업을 명시하는 Methods를 가지고 있다.
+    * Concrete Creator class: 실제로 Product 객체를 생성하는 Factory method를 구현한다.(실제 Product를 만드는 방법을 알고 있는 클래스이다.)
+  * Product: Creator를 통해 만들어지는 Product
+    * Abstract Product class: Product에 대한 Properties와 Methods를 가진다.
+    * Concrete Product class: Product의 종류, 즉 실제 생성되는 Product를 표현한다. 모든 Product는 똑같은 Interface를 구현한다.
 
 * 특징 </br>
-Creator와 Product로 나뉜다.</br>
+어떤 클래스의 인스턴스를 만들지를 서브클래스에서 결정한다.</br>
+자식 Creator가 실제로 어떤 Concrete Product를 생성할지를 결정한다.</br>
+상위 Creator는 생산자 클래스가 어떤 Concrete Product를 생성했는지 전혀 모른다.</br>
 구상 클래스 인스턴스를 생성하는 작업을 서브클래스에게 맡겨 캡슐화할 수 있다.</br>
+즉,제품을 
 
 
 
