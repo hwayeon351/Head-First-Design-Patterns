@@ -55,7 +55,7 @@ Creator와 Product로 나뉜다.</br>
     * Concrete Creator class: 실제로 Product 객체를 생성하는 Factory method를 구현한다.(실제 Product를 만드는 방법을 알고 있는 클래스이다.)
   * Product: Creator를 통해 만들어지는 Product
     * Abstract Product class: Product에 대한 Properties와 Methods를 가진다.
-    * Concrete Product class: Product의 종류, 즉 실제 생성되는 Product를 표현한다. 모든 Product는 똑같은 Interface를 구현한다.
+    * Concrete Product class: Product의 종류, 즉 실제 생성되는 Product를 표현한다. 모든 Concrete Product class는 Abstract Product class라는 똑같은 인터페이스를 구현한다.
 
 * 특징 </br>
 어떤 클래스의 인스턴스를 만들지를 서브클래스에서 결정한다.</br>
@@ -65,8 +65,23 @@ Creator와 Product로 나뉜다.</br>
 즉, Product를 생성하는 부분과 사용하는 부분을 분리함으로써, 다른 Product를 추가하거나 구성을 변경하더라도 Creator를 변경할 필요가 없다.(Creator 클래스가 ConcreteProduct와 느슨한 결합)</br>
 의존성 뒤집기 원칙(Dependency Inversion Principle)을 준수하는 방법 중 하나이다.</br>
 
-
-
-
 </br>
 <img src="/img/factory_method_pattern_00.png" title="" alt=""></img></br>
+
+
+*****
+## 추상 팩토리 패턴 Abstract Factory Pattern
+* 정의 </br>
+서로 연관되거나 의존적인 객체로 이루어진 Product Family(제품군)을 생성하고 추상화할 때 쓸 수 있는 패턴</br>
+객체 구성 Composition을 활용하여 객체를 생성합니다.</br>
+
+* 특징 </br>
+Abstract Factory는 제품군을 생산하는 추상 인터페이스를 제공한다.</br>
+Concrete Factory에서 실제 Product Family를 구성하는 Products를 생성한다.</br>
+Abstract Factory에서 각각의 Product 객체를 생성하는 메소드는 Factory Method Pattern으로 구현할 수 있다.</br>
+많은 Product가 들어있는 Product Family를 생성하는 경우, 인터페이스가 매우 커질 수 있다.
+구상 클래스 인스턴스를 생성하는 작업을 서브클래스에게 맡겨 캡슐화할 수 있다.(클라이언트 코드와 실제 클래스 구현을 분리)</br>
+의존성 뒤집기 원칙(Dependency Inversion Principle)을 준수하는 방법 중 하나이다.</br>
+
+</br>
+<img src="/img/abstract_factory_pattern_00.png" title="" alt=""></img></br>
