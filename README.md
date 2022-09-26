@@ -63,7 +63,7 @@ Creator와 Product로 나뉜다.</br>
 상위 Creator는 생산자 클래스가 어떤 Concrete Product를 생성했는지 전혀 모른다.</br>
 구상 클래스 인스턴스를 생성하는 작업을 서브클래스에게 맡겨 캡슐화할 수 있다.(클라이언트 코드와 실제 클래스 구현을 분리)</br>
 즉, Product를 생성하는 부분과 사용하는 부분을 분리함으로써, 다른 Product를 추가하거나 구성을 변경하더라도 Creator를 변경할 필요가 없다.(Creator 클래스가 ConcreteProduct와 느슨한 결합)</br>
-의존성 뒤집기 원칙(Dependency Inversion Principle)을 준수하는 방법 중 하나이다.</br>
+의존성 뒤집기 원칙(Dependency Inversion Principle)을 준수하는 패턴 중 하나이다.</br>
 
 </br>
 <img src="/img/factory_method_pattern_00.png" title="" alt=""></img></br>
@@ -81,7 +81,7 @@ Concrete Factory에서 실제 Product Family를 구성하는 Products를 생성�
 Abstract Factory에서 각각의 Product 객체를 생성하는 메소드는 Factory Method Pattern으로 구현할 수 있다.</br>
 많은 Product가 들어있는 Product Family를 생성하는 경우, 인터페이스가 매우 커질 수 있다.
 구상 클래스 인스턴스를 생성하는 작업을 서브클래스에게 맡겨 캡슐화할 수 있다.(클라이언트 코드와 실제 클래스 구현을 분리)</br>
-의존성 뒤집기 원칙(Dependency Inversion Principle)을 준수하는 방법 중 하나이다.</br>
+의존성 뒤집기 원칙(Dependency Inversion Principle)을 준수하는 패턴 중 하나이다.</br>
 
 </br>
 <img src="/img/abstract_factory_pattern_00.png" title="" alt=""></img></br>
