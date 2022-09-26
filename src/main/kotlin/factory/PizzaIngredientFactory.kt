@@ -1,5 +1,6 @@
 package factory
 
+//Abstract Factory Pattern - Creator Interface
 interface PizzaIngredientFactory {
     fun createDough(): Dough
     fun createSauce(): Sauce

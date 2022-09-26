@@ -1,5 +1,6 @@
 package factory
 
+//Abstract Product
 abstract class Pizza {
     lateinit var name: String
     lateinit var sauce: Sauce
@@ -24,6 +25,9 @@ abstract class Pizza {
     }
 }
 
+
+//Concrete Product
+//+ PizzaIngredientFactory의 Client 역할
 class CheesePizza(ingredientFactory: PizzaIngredientFactory) : Pizza() {
     private var ingredientFactory: PizzaIngredientFactory
 

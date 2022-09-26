@@ -1,6 +1,9 @@
 package factory
 
+//Abstract Factory Pattern - Concrete Creator
 class ChicagoPizzaIngredientFactory: PizzaIngredientFactory {
+    //Implement Factory Method
+    //Product Family를 구성하는 실제 Product들을 알고 있음
     override fun createDough(): Dough = ThickCrustDough()
 
     override fun createSauce(): Sauce = PlumTomatoSauce()

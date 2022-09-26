@@ -1,8 +1,10 @@
 package factory
 
+//Concrete Creator
 class NYPizzaStore : PizzaStore() {
     private val ingredientFactory: PizzaIngredientFactory = NYPizzaIngredientFactory()
 
+    //Implement Factory Method
     override fun createPizza(type: String): Pizza? {
         val pizza = when(type) {
             "cheese" -> CheesePizza(ingredientFactory)

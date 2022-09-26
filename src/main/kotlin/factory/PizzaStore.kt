@@ -1,5 +1,6 @@
 package factory
 
+//Abstract Creator
 abstract class PizzaStore {
     fun orderPizza(type: String): Pizza? {
         val pizza = createPizza(type)
@@ -10,5 +11,7 @@ abstract class PizzaStore {
 
         return pizza
     }
+
+    //Factory Method
     abstract fun createPizza(type: String): Pizza?
 }
