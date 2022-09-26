@@ -1,8 +1,8 @@
 package factory
 
 fun main() {
-    val nyStore = NYPizzaStore()
-    val chicagoStore = ChicagoPizzaStore()
+    val nyStore: PizzaStore = NYPizzaStore()
+    val chicagoStore: PizzaStore = ChicagoPizzaStore()
 
     var edan_pizza = nyStore.orderPizza("cheese")
     println("에단이 주문한 ${edan_pizza?.name}\n")

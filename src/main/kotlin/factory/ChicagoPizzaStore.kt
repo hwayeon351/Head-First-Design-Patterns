@@ -1,7 +1,7 @@
 package factory
 
 class ChicagoPizzaStore : PizzaStore() {
-    private val ingredientFactory = ChicagoPizzaIngredientFactory()
+    private val ingredientFactory: PizzaIngredientFactory = ChicagoPizzaIngredientFactory()
 
     override fun createPizza(type: String): Pizza? {
         val pizza = when(type) {
