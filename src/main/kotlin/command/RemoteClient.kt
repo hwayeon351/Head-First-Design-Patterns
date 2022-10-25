@@ -10,12 +10,14 @@ import command.receiver.Stereo
 fun main() {
     val remoteControl = RemoteControl()
 
+    //Receiver 생성
     val livingRoomLight = Light("Living Room")
     val kitchenLight = Light("kitchen")
     val ceilingFan = CeilingFan("Living Room")
     val garageDoor = GarageDoor("Garage")
     val stereo = Stereo("Living Room")
 
+    //Command에 Receiver 할당
     val livingRoomLightOn = LightOnCommand(livingRoomLight)
     val livingRoomLightOff = LightOffCommand(livingRoomLight)
     val kitchenLightOn = LightOnCommand(kitchenLight)
@@ -27,6 +29,7 @@ fun main() {
     val stereoOnWithCDCommand = StereoOnWithCDCommand(stereo)
     val stereoOffCommand = StereoOffCommand(stereo)
 
+    //Invoker에 Command 등록
     remoteControl.setCommand(0, livingRoomLightOn, livingRoomLightOff)
     remoteControl.setCommand(1, kitchenLightOn, kitchenLightOff)
     remoteControl.setCommand(2, ceilingFanOnCommand, ceilingFanOffCommand)
@@ -35,6 +38,7 @@ fun main() {
 
     println(remoteControl)
 
+    //Invoker 동작
     remoteControl.onButtonWasPushed(0)
     remoteControl.offButtonWasPushed(0)
     remoteControl.onButtonWasPushed(1)
