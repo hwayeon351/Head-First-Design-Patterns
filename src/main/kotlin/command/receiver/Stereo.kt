@@ -1,4 +1,4 @@
-package command.listener
+package command.receiver
 
 class Stereo(val location: String) {
     fun on() = println("$location stereo is on")

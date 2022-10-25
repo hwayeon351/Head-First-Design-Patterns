@@ -1,6 +1,6 @@
 package command.command
 
-import command.listener.Light
+import command.receiver.Light
 
 class LightOnCommand(val light: Light) : Command {
     override fun execute() {

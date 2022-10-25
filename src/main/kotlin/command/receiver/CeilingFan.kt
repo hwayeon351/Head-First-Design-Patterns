@@ -1,4 +1,4 @@
-package command.listener
+package command.receiver
 
 class CeilingFan(val location: String) {
     private var level: Int = 0

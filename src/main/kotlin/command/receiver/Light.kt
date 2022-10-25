@@ -1,4 +1,4 @@
-package command.listener
+package command.receiver
 
 class Light(val location: String?) {
     fun on() = println("$location light is on")

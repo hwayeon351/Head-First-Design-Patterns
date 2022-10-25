@@ -1,6 +1,6 @@
 package command.command
 
-import command.listener.CeilingFan
+import command.receiver.CeilingFan
 
 class CeilingFanOffCommand(private val ceilingFan: CeilingFan): Command {
     override fun execute() {

@@ -1,6 +1,6 @@
 package command.command
 
-import command.listener.GarageDoor
+import command.receiver.GarageDoor
 
 class GarageDoorDownCommand(val garageDoor: GarageDoor) : Command {
     override fun execute() {

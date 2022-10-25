@@ -1,4 +1,4 @@
-package command.listener
+package command.receiver
 
 class GarageDoor(val location: String) {
     fun up() = println("$location garage Door is Up")

@@ -1,10 +1,10 @@
 package command
 
 import command.command.*
-import command.listener.CeilingFan
-import command.listener.GarageDoor
-import command.listener.Light
-import command.listener.Stereo
+import command.receiver.CeilingFan
+import command.receiver.GarageDoor
+import command.receiver.Light
+import command.receiver.Stereo
 
 
 fun main() {
